@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ladrillos"
+    tools:context=".RegistroCiudad">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/tv_Registro"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_registro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/tv_codigo"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etext_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_registro"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/tv_codigo"
+        android:layout_toRightOf="@+id/tv_codigo"
+        android:ems="10"
+        android:hint="@string/et_codigo"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorHint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_identificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_codigo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_id"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etext_codigo"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_identificacion"
+        android:layout_toRightOf="@+id/tv_identificacion"
+        android:ems="10"
+        android:hint="@string/et_id"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorHint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_identificacion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/tv_ciudad"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etext_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etext_id"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tv_ciudad"
+        android:layout_toRightOf="@+id/tv_ciudad"
+        android:ems="10"
+        android:hint="@string/et_ciudad"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/tv_ciudad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/fondo2"
+        android:onClick="RegistrarCiudades"
+        android:text="@string/ButtonReg" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/etext_ciudad"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="@drawable/fondo2"
+        android:onClick="Consultar"
+        android:text="@string/ButtonMostrar" />
+
+
+</RelativeLayout>

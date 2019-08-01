@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grises2"
+    tools:context=".VisualizacionCiudad">
+
+
+    <TextView
+        android:id="@+id/tv_prueba1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="18dp"
+        android:text="Consulta Ciudades"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinner_lista"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prueba1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_prueba2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_lista"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="36dp"
+        android:text="Código:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_prueba3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prueba2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Id:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_prueba4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prueba3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Ciudad:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_cod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_lista"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_toEndOf="@+id/tv_prueba2"
+        android:layout_toRightOf="@+id/tv_prueba2"
+        android:text="---"
+        android:textColorHint="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/tv_idet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cod"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_prueba3"
+        android:layout_toRightOf="@+id/tv_prueba3"
+        android:text="---" />
+
+    <TextView
+        android:id="@+id/tv_ciu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_idet"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/tv_prueba4"
+        android:layout_toRightOf="@+id/tv_prueba4"
+        android:text="---" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_prueba4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/tunja" />
+
+    <Button
+        android:id="@+id/botModi"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/fondo2"
+        android:onClick="Modificar"
+        android:text="Modificar" />
+
+    <Button
+        android:id="@+id/botReg"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/botModi"
+        android:layout_toRightOf="@+id/botModi"
+        android:background="@drawable/fondo2"
+        android:onClick="Regis"
+        android:text="Registro" />
+
+</RelativeLayout>

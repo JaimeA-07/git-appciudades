@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Prueba Ciudades</string>
+    <string name="registro_u">Registro de Usuario</string>
+    <string name="et_nombre">Nombre</string>
+    <string name="et_email">E-mail @.com</string>
+    <string name="et_password">Password</string>
+    <string name="buttonRegistrar">Registrar</string>
+    <string name="buttonBuscar">Buscar</string>
+    <string name="checkbox">Yo, Acepto términos y condiciones</string>
+
+    <string name="tv_Registro">Registro Ciudades</string>
+    <string name="tv_codigo">Codigo:</string>
+    <string name="tv_id">Id Ciudad:</string>
+    <string name="tv_ciudad">Ciudad:</string>
+    <string name="et_codigo">Codigo</string>
+    <string name="et_id">Id</string>
+    <string name="et_ciudad">Ciudad</string>
+    <string name="ButtonReg">Registrar</string>
+    <string name="ButtonMostrar">Mostrar</string>
+
+    <!-- ConsultarUsuarios Activity -->
+    <string name="capCod">Codigo</string>
+    <string name="capId">Id</string>
+    <string name="capCiu">Ciudad</string>
+    <string name="boton6">Buscar</string>
+    <string name="boton7">Actualizar</string>
+    <string name="boton8">Eliminar</string>
+    <string name="boton9">Mostrar</string>
+
+</resources>

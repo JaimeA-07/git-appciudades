@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ladrillos2"
+    tools:context=".ConsultaCiudad">
+
+    <EditText
+        android:id="@+id/capCod"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/capCod"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/capId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capCod"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/capId"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/capCiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/capCiu"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/capCod"
+        android:layout_toRightOf="@+id/capCod"
+        android:background="@drawable/fondo6"
+        android:onClick="Buscar"
+        android:text="@string/boton6" />
+
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/capCiu"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/btnEliminar"
+        android:layout_toRightOf="@+id/btnEliminar"
+        android:background="@drawable/fondo6"
+        android:onClick="Eliminar"
+        android:text="@string/boton8" />
+
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/capCiu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fondo6"
+        android:onClick="Actualizar"
+        android:text="@string/boton7" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btnEliminar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/fondo2"
+        android:onClick="Mostrar"
+        android:text="@string/boton9" />
+
+
+</RelativeLayout>
